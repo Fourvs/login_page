@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white p-6">
+
+<h1 class="text-3xl text-orange-500">Your Analysis</h1>
+
+<div class="mt-6 bg-[#1a0503] p-6 rounded-2xl">
+  <h2 class="text-xl">Extracted Skills</h2>
+  <ul id="skills" class="mt-2 text-gray-300"></ul>
+</div>
+
+<script>
+  const data = JSON.parse(localStorage.getItem("result"));
+
+  const skillsList = document.getElementById("skills");
+
+  data.skills.forEach(skill => {
+    const li = document.createElement("li");
+    li.innerText = skill;
+    skillsList.appendChild(li);
+  });
+</script>
+
+</body>
+</html>
