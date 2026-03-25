@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoLab | Login</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="bg-[#0f0f0f] text-white min-h-screen flex items-center justify-center">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent blur-2xl"></div>
+
+  <!-- Main Container -->
+  <div class="relative w-full max-w-5xl flex rounded-3xl overflow-hidden shadow-2xl">
+
+    <!-- LEFT SECTION -->
+    <div class="hidden md:flex flex-col justify-center w-1/2 bg-[#1a1a1a] p-10">
+      <h1 class="text-4xl font-extrabold mb-4">
+        Auto<span class="text-orange-500">Lab</span>.
+      </h1>
+      <p class="text-gray-400 text-lg leading-relaxed">
+        Stop formatting, start submitting.  
+        Build structured practical files instantly with clean formatting.
+      </p>
+    </div>
+
+    <!-- RIGHT SECTION (LOGIN CARD) -->
+    <div class="w-full md:w-1/2 bg-[#181818] p-10 flex flex-col justify-center">
+
+      <h2 class="text-3xl font-bold mb-6">
+        Welcome Back
+      </h2>
+
+      <!-- Email -->
+      <input
+        type="text"
+        placeholder="Email or Phone"
+        class="bg-[#252525] border border-gray-700 px-4 py-3 rounded-xl mb-4 focus:outline-none focus:border-orange-500 transition"
+      />
+
+      <!-- Password -->
+      <input
+        type="password"
+        placeholder="Password"
+        class="bg-[#252525] border border-gray-700 px-4 py-3 rounded-xl mb-4 focus:outline-none focus:border-orange-500 transition"
+      />
+
+      <!-- Login Button -->
+      <button
+        class="bg-orange-500 hover:bg-orange-600 transition py-3 rounded-xl font-semibold text-lg shadow-lg"
+      >
+        Log In
+      </button>
+
+      <!-- Forgot Password -->
+      <p class="text-sm text-gray-400 text-center mt-4 hover:text-orange-400 cursor-pointer">
+        Forgot password?
+      </p>
+
+      <!-- Divider -->
+      <div class="flex items-center my-6">
+        <div class="flex-1 h-px bg-gray-700"></div>
+        <span class="px-3 text-gray-400 text-sm">OR</span>
+        <div class="flex-1 h-px bg-gray-700"></div>
+      </div>
+
+      <!-- Google Login -->
+      <button
+        class="bg-[#252525] hover:bg-[#2d2d2d] py-3 rounded-xl text-sm border border-gray-700 transition"
+      >
+        Sign in with Google
+      </button>
+
+      <!-- Signup -->
+      <p class="text-center text-sm mt-6 text-gray-400">
+        Don't have an account?
+        <span class="text-orange-500 cursor-pointer hover:underline">
+          Sign up
+        </span>
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>
